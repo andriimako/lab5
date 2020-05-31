@@ -1,33 +1,46 @@
 public class User {
-    public  String name;
-    public String lastname;
-    public String Email;
-    public String password;
+    private String name, surname, email, password;
 
-    User(String x, String y, String z, String t)
-    {
-        this.name = x;
-        this.lastname = y;
-        this.Email = z;
-        this.password =  t;
+    public User(String name, String surname, String email, String password) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+        this.password = password;
     }
 
-    User(String e)
-    {
-        this.name = "guest";
-        this.lastname = "guest";
-        this.Email = e;
-        this.password = null;
+    public User(String name) {
+        this.name = "Guest";
     }
 
-    User(User c, String n, String l, String p)
-    {
-        this.name = n;
-        this.lastname = l;
-        this.Email = c.Email;
-        this.password = p;
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
-
